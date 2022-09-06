@@ -1,0 +1,22 @@
+﻿@model DogViewModel
+@{
+}
+<form method="post">
+    <div>
+        <label>Pet name</label>
+        <input asp-for="PetName"/>
+    </div>
+    <div>
+        <label>Pet age</label>
+        <input asp-for="PetAge"/>
+    </div>
+    <div>
+        <label>Pet weight</label>
+        <input asp-for="PetWeight"/>
+    </div>
+    <div>
+        <label>Owner name</label>
+        <input asp-for="OwnerName"/>
+    </div>
+    <button type="submit">Submit</button>
+</form>
