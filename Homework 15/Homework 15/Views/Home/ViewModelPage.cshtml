@@ -1,0 +1,11 @@
+﻿@model Fish[] 
+
+@{
+    Model[0].Name = ViewData["Name"] as string;
+    Model[2].Weight = ViewBag.Weight;
+}
+
+@foreach (var item in Model)
+{
+    <li>@item.ToFishString()</li>
+}

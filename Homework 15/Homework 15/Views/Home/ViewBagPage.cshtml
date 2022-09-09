@@ -1,0 +1,9 @@
+﻿@{
+    var fish = ViewBag.Fish as Fish[];
+}
+
+
+@foreach (var item in fish)
+{
+    <li>@item.ToFishString()</li>
+}
